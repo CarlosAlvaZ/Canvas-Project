@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Online Paint App</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/canva.css">
+	<link rel="shortcut icon" href="./MEDIA/icono.ico">
+</head>
+<body>
+	<main id="main">
+		<aside id="aside">
+			<ul>
+				<li id="list-element">
+					<div id="menu-item"><input id="color" type="color" oninput="defineColor(this.value)"></div>
+				</li>
+				<li id="list-element">
+					<div id="menu-item"><input id="size" type="range" min="1" max="12" oninput="defineRange(this.value)"></div>
+				</li>
+				<li id="list-element">
+					<div id="menu-item"><button id="download">Download</button></div>
+				</li>
+			</ul>
+		</aside>
+		<div>
+			<canvas id="canvas"></canvas>
+		</div>
+	</main>
+	<script src="./JS/canva2.js"></script>
+</body>
+</html>
